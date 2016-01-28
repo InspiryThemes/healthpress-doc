@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Health Press Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+	<!-- DOCs Nav ============================================== -->
+    <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <button type="button" class="btn btn-navbar" >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+              <div class="container">              	
+                <ul class="nav">
+                  <li><a href="#disclaimer">Disclaimer</a></li>
+                  <li class="dropdown">
+                    <a href="#getting-started">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#quick-setup">Quick Setup</a></li>
+                    </ul>
+                  </li>
+                    <li class="dropdown"><a href="#general-setting">General <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#header-settings">Header Settings</a></li>
+                            <li><a href="#custom-menus">Custom Menus</a></li>
+                            <li><a href="#theme-styling">Customizing Styles</a></li>
+                            <li><a href="#social-navigation">Social Navigation</a></li>
+                            <li><a href="#background-settings">Background Settings</a></li>
+                            <li><a href="#general-settings">General Settings</a></li>
+                            <li><a href="#footer-settings">Footer Settings</a></li>
+                        </ul>
+                    </li>
+                  <li class="dropdown"><a href="#setting-homepage">Home Page <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#setting-slides">Setting up Slides and Slider</a></li>
+                          <li><a href="#slider-choice">Home Page Slider</a></li>
+                          <li><a href="#slogan-settings">Slogan Settings</a></li>
+                          <li><a href="#services-list-settings">Services List Settings</a></li>
+                          <li><a href="#doctors-settings">Doctor section Settings</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown"><a href="#setting-blog">Blog Page <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#add-post">How to Add New Blog Post</a></li>
+                          <li><a href="#blog-settings">Blog Settings</a></li>
+                      </ul>
+                  </li>
+                    <li class="dropdown"><a href="#doctors-settings">Doctors Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#add-doctors">How to Add Doctor</a></li>
+                            <li><a href="#doctors-settings">Doctors Settings</a></li>
+                            <li><a href="#doctors-tempSettings">Doctors Templates Settings</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#services-settings">Services Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#add-services">How to add Service</a></li>
+                            <li><a href="#services-settings">Services Templates Settings</a></li>
+                            <li><a href="#services-list-settings">Services List Settings</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#gallery-settings">Gallery Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#add-gallery">How to Add New Gallery Item</a></li>
+                            <li><a href="#gallery-settings">Gallery Settings</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#add-faq">FAQ's Page <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#add-faq">How to Add New FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#testi-settings">Testimonials Page <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#add-testi">How to Add Testimonials</a></li>
+                            <li><a href="#testi-settings">Testimonials Settings</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#setting-contact">Contact Page <b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="display: none;">
+                            <li><a href="#setting-contact">Setting up Contact Page</a></li>
+                            <li><a href="#general-settings">General Settings</a></li>
+                            <li><a href="#contact-settings">Contact Settings</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#custom-widgets">Custom Widgets <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#appointment-widget">Appointment Widget</a></li>
+                            <li><a href="#testimonials-widget">Testimonials Widget</a></li>
+                            <li><a href="#news-widget">Newsletter Subscription Widget</a></li>
+                            <li><a href="#info-widget">Footer Information Widget</a></li>
+                            <li><a href="#location-widget">Footer Location Widget</a></li>
+                            <li><a href="#recentPost-widget">Recent Posts With Thumbnail Widget</a></li>
+                            <li><a href="#contact-widget">Quick Contact Widget</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#short-codes">Short codes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#columns">Columns</a></li>
+                            <li><a href="#accordion">jQuery Accordion</a></li>
+                            <li><a href="#tabs">jQuery Tabs</a></li>
+                            <li><a href="#message">Messages</a></li>
+                            <li><a href="#buttons">Buttons</a></li>
+                        </ul>
+                    </li>
+                   <li><a href="#theme-customization"><i class="icon-chevron-right"></i>WP Customization</a></li>
+                  <li><a href="#theme-customization"><i class="icon-chevron-right"></i>Theme Customization</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>“HealthPress WordPress Theme”</h1>
+    <p class="lead">“HealthPress Theme” Documentation by “inspirythemes.com” v1.5</p>
+  </div>
+</header>
+
+
+  <div class="container">
+      
+      <div class="row">
+        <div class="span12">
+        		<div class="container-fluid topinfo">
+        			  <div class="row-fluid">
+        					<div class="span4 left-info">
+        							<p>
+        								<strong>
+                                            Last Update: 24-Feb-2015<br>
+                                            Support: <a href="http://support.inspirythemes.com/" target="_blank">Support Site</a><br>
+                                            Developed By: <a href="http://themeforest.net/user/InspiryThemes/portfolio" target="_blank">inspirythemes</a><br>
+        								</strong>                                        
+        							</p>
+        					</div>
+        					<div class="span8">
+        							<p class="">Thank you for purchasing Health Press WordPress Theme . If you have any question that is beyond the scope of this help file, please feel free to create a ticket for us at <a href="http://support.inspirythemes.com/" target="_blank">Our Support Site</a>. Thanks!</p>
+        					</div>
+        			  </div>
+        		</div>
+        		<div class="follow-us center">
+        				<a class="tf-link-btn" href="http://themeforest.net/user/InspiryThemes" target="_blank" Title="Follow on Themeforest.net"></a>
+        		  </div>
+        	<section>
+            <div class="main-note">
+        			Please remember to rate theme! To do so, go to your downloads page and click on the star rating! Thanks! <a href="how-to-rate-theme.jpg" target="_blank">See This Image.</a>
+        		</div>	
+        				
+        		<div class="important">
+        			<h4>How to Get Themeforest Item Purchase Code to Create a Support Ticket</h4>
+        			<p>Please visit this <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/how-to-get-themeforest-item-purchase-code/">Knowledge Base Article</a> to learn about how to get item purchase code from themeforest to signup and create ticket on our support site.</p>
+        		</div>
+        		<hr> 
+          </section>
+           <!-- Disclaimer ============================================== -->
+          <section id="disclaimer">
+            <div class="page-header">
+              <h1>A) Disclaimer</h1>
+            </div>
+            <p class="lead">We offer limited support for theme customers. We only provide support for our themes and their core features and functionality. We cannot guarantee our themes will function with all third party plugins and server environments. If you plan on adding numerous plugins to this theme, please note We cannot facilitate support of any conflicts they might cause with the default functionality. The BlogMag WordPress theme is presented as it is.</p>
+          </section>
+        
+          <!-- Getting Started ============================================== -->
+          <section id="getting-started">
+            <div class="page-header">
+              <h1>B) Getting Started</h1>
+            </div>
+            
+            <p class="lead">Welcome to HealthPress Theme Documentation. In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, please see the WordPress Codex <a href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>  		  
+            <div id="installation">
+                <h2>Installation</h2>
+                <div class="main-note"><center><strong>Please make sure to unzip the package that you downloaded from themeforest, Before uploading it to your WordPress installation as a theme.</strong></center> Because, it is not only a theme and contain many other related files &amp; folders like Documentation, Import XML, License Text, PSDs, Theme Files and Theme Zip</div>
+                <p class="lead">When you are ready to install a theme, you must first upload the theme files and then activate the theme from <strong>Appearance > Themes</strong>. Theme files can be uploaded in two ways:</p>
+                <p class="lead"><strong>FTP Upload:</strong> Using your FTP program, upload the non-zipped theme folder into the /wp-content/themes/ folder on your server.</p>
+                
+                <p class="lead"><strong>OR</strong></p>
+                
+                <p class="lead"><strong>WordPress Upload:</strong> Navigate to <strong>Appearance &gt; Themes &gt; Add New &gt; Upload Theme</strong>. click 'Choose File', and select the zipped theme folder. Hit “Install Now” and the theme will be uploaded and installed.</p>
+                
+                <p class="lead">Once the theme is uploaded, you need to activate it. Go to <strong>Appearance &gt; Themes</strong> and activate your chosen theme.</p>
+                <p class="lead"><strong>Note:</strong>The Theme zip name is <strong>healthpress-theme.zip</strong>. which you will find in the downloaded package from themeforest</p>
+        		
+                <h4>Install Child Theme</h4>
+                <p>It is better to use child theme and if you need to modify anything you modify in child theme only. This way you can easily update your parent theme when new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
+                
+                <p>To install child theme for Health Press, you need to upload the <strong>healthpress-child.zip</strong> and activate it the same way you uploaded <strong>healthpress-child.zip</strong> as guided above.</p>
+        		
+                <!---->
+                <div class="page-header"></div>
+                <div id="quick-setup">                    
+                	<h2>Automatic &amp; Quick Setup</h2>                    
+                    <h3>Step 1:</h3>
+                    <p class="lead">
+                        Go to <b>Appearance &gt;&gt; Import Demo Data </b> and press the "Import Demo Data" button and wait as it will take few minutes to import demo data and related images from remote server.
+                    </p>
+                    <h3>Step 2:</h3>
+                    <p class="lead">
+                        Go to <b>Appearance &gt;&gt; Theme Options </b> and simply save the theme options once.
+                    </p>
+                    <h3>Step 3:</h3>
+                    <p class="lead">
+                        Visit your site. Your basic theme installation is complete.
+                    </p>
+                    
+                    <hr>  
+                    
+                	<h2>Manual Setup</h2>
+                    <h3>Step 1:</h3>
+                    <p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest.net and  use the XML within it.&nbsp;Go to the <strong>WordPress Admin &gt;&gt; Tools &gt;&gt; Import &gt;&gt; WordPress</strong>&nbsp;( at 1st time you need to install&nbsp;WordPress&nbsp;import plugin). After that, Import the XML file and be sure to include everything, including attachments. After that’s done, you will have a bunch of posts, pages and other related contents.</p>
+                    <h3>Step 2:</h3>
+                    <p class="lead">Go to <strong>Appearance &gt;&gt; Menus</strong>. You will find two&nbsp;menus&nbsp;already created. Arrange and Assign them as displayed in image below.<br/>
+                    Main Navigation is create for Main Menu(Theme Location) and Footer menu you can use in footer with quick menu widget or as you need.</p>
+                    <figure class="thumbnail"><img src="assets/img/quick-setup/menus.png" alt="Image"></figure> 
+                    <h3>Step 3:</h3>
+                    <p class="lead">Go to&nbsp;<strong>Settings &gt;&gt; Reading&nbsp;</strong>and assign&nbsp;<strong>Home</strong> page as Front Page and&nbsp;<strong>Blog</strong> page as posts page. As displayed in image below.</p>
+                    <figure class="thumbnail"><img src="assets/img/quick-setup/reading.png" alt="Image"></figure> 
+                    <h3>Step 4:</h3>
+                    <p class="lead">Go to <b>Appearance &gt;&gt; Theme Options &gt;&gt; Header</b> and upload your logo and favicon as displayed in image below.</p>
+                    <figure class="thumbnail"><img src="assets/img/quick-setup/header.png" alt="Image"></figure>
+                    <p>If you do not have an image logo then you can simply provide Site Title in <strong>Setting &gt;&gt; General</strong> page. As displayed in image below.</p>
+                    <figure class="thumbnail"><img src="assets/img/quick-setup/general.png" alt="Image"></figure>
+                    <h3>Step 5:</h3>
+                    <p class="lead">Go to&nbsp;<b>Slides</b> and configure your slider slides.</p>
+                    <p class="lead">Slider appear as part of home page template. You can add slides based on guide images provided below.</p>
+                    <figure class="thumbnail"><img src="assets/img/quick-setup/slides.png" alt="Image"></figure>
+                    <p class="lead"><strong>How to add New Slide</strong></p>
+                    <figure class="thumbnail"><img src="assets/img/quick-setup/slides-new.png" alt="Image"></figure>
+                    <!--<h3>Step 6:</h3>
+                    <p>If you want to display Services list on home page below slider you can provide related theme options in <strong>Theme Options &gt;&gt; Services List</strong> as displayed in image below.</p>
+                    <figure class="thumbnail"><img src="assets/img/quick-setup/services.png" alt="Image"></figure>-->
+                    <h5>Your Home Page’s basic settings are done now. you can further customize things according to your requirements.</h5>
+                </div>
+                <div class="page-header"></div>
+                <!---->
+                		
+                <!--<h3>Translating Theme to Your language</h3>
+                <p class="lead">If you want to translate the theme to your language then read the following article on our support site. <a href="http://support.inspirythemes.com/knowledgebase/how-to-translate-your-theme-to-your-language/" target="_blank">How to translate your theme to your language</a></p>-->
+                
+                            
+            <div id="setting-homepage">
+                <h2>Setting up Homepage</h2>
+                <p class="lead"><strong>Create Home Page using Home Template as displayed in image below.</strong></p>
+                <p class="lead">To set up the homepage you must create a new page, you can do so by navigating to Pages > Add New. You can give this page a title yet you do not have to include any content. Select the “Home” template from the Page Attributes section and click “Publish”.</p>
+                <figure class="thumbnail"><img src="assets/img/pages/home.png" alt="Image"></figure>                            
+            </div>
+            
+            <div id="setting-blog">
+                <h2>Setting up Blog</h2>
+                <p class="lead"><strong>Create Blog Page using Default Template as displayed in image below.</strong></p>
+                <p class="lead">To set up the blog page you must create a new page, you can do so by navigating to Pages > Add New. You can give this page a title yet you do not have to include any content. Select the “Default Template” template from the Page Attributes section and click “Publish”.</p>
+                <figure class="thumbnail"><img src="assets/img/pages/blog.png" alt="Image"></figure>
+                <p class="lead">Once you have created your home and blog pages  navigate to Settings > Reading and configure the “Front Page Displays” setting. Select the static page option and choose the home page you just created as your front page and blog page you created as posts page. Please see the image below for reference.</p>
+                <figure class="thumbnail"><img src="assets/img/quick-setup/reading.png" alt="Image"></figure>
+                <p class="lead">Your home and blog pages are now created and can be further configured through the theme options.</p>
+            </div>
+         
+            
+            <div id="setting-slides">
+                <h2>Setting up Slides and Slider</h2>
+                <p class="lead">Slider appear as part of home page template. Default slider is Flex slider. </p>
+                <h3>1) Flex Slider</h3>
+                <p class="lead">You can add slides based on guide images provided below.</p>
+                <p class="lead"><strong>Where to Add Slides</strong></p>
+                <figure class="thumbnail"><img src="assets/img/quick-setup/slides.png" alt="Image"></figure>
+                <p class="lead"><strong>How to add New Slide</strong></p>
+                <figure class="thumbnail"><img src="assets/img/quick-setup/slides-new.png" alt="Image"></figure>
+
+                <h3>2) Revolution Slider</h3>
+                <p class="lead">Second slider is Revolution Slider and to use it you need to install <strong>Revolution slider plugin</strong> that comes with this theme. Located in plugins directory named <strong>revslider.zip</strong>. You can install this plugin based on guide image provided below.</p>
+                <figure class="thumbnail"><img src="assets/img/revslider/revolution-slider.png" alt="Image"></figure>
+                <p class="lead">After that you will have a Revolution Slider settings menu item on left side. So, you can add your slider from there as displayed in given below image.</p>
+                <figure class="thumbnail"><img src="assets/img/revslider/Revolution Slider 1.png" alt="Image"></figure>
+                <p class="lead"><strong>How to add New Slide</strong></p>
+                <figure class="thumbnail"><img src="assets/img/revslider/Revolution Slider 2.png" alt="Image"></figure>
+                <h2>Import our demo slider (Section)?</h2>
+            </div>
+
+          </section>
+        	
+          <!-- Theme Options ============================================== -->
+        	<section id="theme-options">
+          	<div class="page-header">
+              <h1>C) Theme Options</h1>
+            </div>
+            
+            <p class="lead">To configure various theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>.</p>
+            
+            
+            <div id="header-settings">
+              <h2>Header Settings</h2>
+              <p class="lead">To configure header from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see first tab <strong>Header</strong> on the left column and its options on right side. As displayed in image below. The options are pretty much self explanatory.</p>
+              <figure class="thumbnail"><img src="assets/img/to-header.png" alt="Image"></figure>
+            </div>
+            
+            <div id="theme-styling">
+            	<h2>Styling</h2>
+              <p class="lead">To change theme color from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 2nd tab <strong>Styling</strong> on the left column and its options on right side. As displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/to-styling.png" alt="Image"></figure>
+            </div>
+            
+            <div id="social-navigation">
+              <h2>Social Navigation</h2>
+              <p class="lead">To configure social navigation from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 3rd tab <strong>Social Navigation</strong> on the left column and its options on right side. As displayed in image below. So, you can specify the links of social networks that you want to display in your header and leave others empty.</p>
+              <figure class="thumbnail"><img src="assets/img/to-social.png" alt="Image"></figure>
+            </div>
+
+                <div id="slider-choice">
+                    <h2>Home Page Slider</h2>
+                    <p class="lead">This theme provides two sliders.</p>
+                    <p class="lead">Default slider is Flex slider you can choose the slider that you want to use on homepage. You have to navigate to <strong>Appearance > Theme Options</strong>. Here you can see 4th tab <strong>Slider</strong> on the left column and its options on right side. As displayed in image below.</p>
+                    <figure class="thumbnail"><img src="assets/img/revslider/home-slider.png" alt="Image"></figure>
+                </div>
+            
+            <div id="blog-settings">  
+              <h2>Blog Settings</h2>
+              <p class="lead">To configure blog page settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 9th tab <strong>Blog</strong> on the left column and its options on right side. As displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/to-blog.jpg" alt="Image"></figure>              
+            </div>
+            
+            <div id="slogan-settings"> 
+              <h2>Slogan Settings</h2>
+              <p class="lead">To configure slogan  settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 5th tab <strong>Slogan</strong> on the left column and its options on right side. As displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/to-slogan.jpg" alt="Image"></figure>
+            </div>
+            
+            <div id="doctors-settings">
+            	<h2>Doctors Settings</h2>
+              <p class="lead">To configure Doctors section settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 7th tab <strong>Doctors</strong> on the left column and its options on right side. As displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/to-doctors.jpg" alt="Image"></figure>
+            </div>
+
+            <div id="doctors-tempSettings">
+                <h2>Doctors Templates Settings</h2>
+                <p class="lead">To configure Doctors Templates settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 12th tab <strong>Doctors Templates</strong> on the left column and its options on right side. As displayed in image below.</p>
+                <figure class="thumbnail"><img src="assets/img/to-doctors-temp.jpg" alt="Image"></figure>
+            </div>
+            <div id="testi-settings">
+              <h2>Testimonials Settings</h2>
+              <p class="lead">To configure testimonials settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 8th tab <strong>Testimonials</strong> on the left column and its options on right side. As displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/to-testimonials.jpg" alt="Image"></figure>
+            </div>
+            
+            <div id="services-settings">  
+              <h2>Services Templates Settings</h2>
+              <p class="lead">To configure Services Templates settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 11th tab <strong>Services Templates </strong> on the left column and its options on right side. As displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/to-services-page.jpg" alt="Image"></figure>
+                <p class="lead">To configure Services Detail Page settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 10th tab <strong>Services Detail Page </strong> on the left column and its options on right side. As displayed in image below.</p>
+                <figure class="thumbnail"><img src="assets/img/to-services-single-page.jpg" alt="Image"></figure>
+            </div>
+            
+            <div id="services-list-settings">
+              <h2>Services List Settings</h2>
+              <p class="lead">To configure services list settings  from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 6th tab <strong>Services List</strong> on the left column and its options on right side. As displayed in image below.</p>
+              <p class="lead">Any Number of Services from One to Five you Can add in services, listed on homepage and services page as displayed in image below.</p>
+              <p class="lead">You need to provide service image, heading, text info and target link.</p>
+              <figure class="thumbnail"><img src="assets/img/to-services-list.jpg" alt="Image"></figure>
+            </div>
+            
+            <div id="gallery-settings">
+              <h3>Gallery Settings</h3>
+              <p class="lead">To configure Gallery Item Single Page settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 13th tab <strong>Gallery </strong> on the left column and its options on right side. As displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/gallery/gallery-settings.png" alt="Image"></figure>
+            </div>
+
+            <div id="general-settings">
+                <h2>General Settings</h2>
+                <p class="lead">Here you can see 14th tab <strong>General</strong> on the left column and its options on right side. As displayed in image below. So, you can disable <strong>Captcha</strong> in Appoinment widget+Contact page and theme <strong>Responsive</strong> styles.</p>
+                <figure class="thumbnail"><img src="assets/img/to-general.png" alt="Image"></figure>
+            </div>
+            
+            <div id="contact-settings">            
+              <h2>Contact Settings</h2>
+              <p class="lead">To configure contact page settings from theme options you have to navigate to <strong>Appearance &gt; Theme Options</strong>. Here you can see 15th tab <strong>Contact</strong> on the left column and its options on right side. As displayed in image below. So, you can specify contact form heading, target email address, postal address, contact form text below heading, google map latitude &amp; longitude and zoom level.</p>
+              <figure class="thumbnail"><img src="assets/img/to-contact.png" alt="Image"></figure>
+            </div>
+            
+            <div id="footer-settings">
+              <h2>Footer Settings</h2>
+              <p class="lead">The Last tab in <strong>Theme Options</strong> is <strong>Footer</strong>. The options in Footer tab are displayed below</p>
+              <p class="lead">You can enable and disable twitter tweets above footer and also specify the username for tweets  to show and let people know what you are sharing on twitter. You also need four other fields to make your twitter widget work with twitter API. Fields are consumer Key, consumer Secret, Access Token, Access Token Secret.</p>
+                <h5>How to Get Your Twitter Consumer Keys and Access Tokens</h5>
+                <ol>
+                    <li>Sign In to the <a target="_blank" href="https://dev.twitter.com/">Twitter Developers</a> section. If you do not already have an account, you can login with your normal Twitter credentials</li>
+                    <li>Got to <a target="_blank" href="https://dev.twitter.com/apps">My Applications</a> page.</li>
+                    <li>Click <strong>Create a New Application</strong> Button and it will take you to <a target="_blank" href="https://dev.twitter.com/apps/new">Create an Application</a> form page.</li>
+                    <li>Provide your website name, description and URL, Agree with contract and provide CAPTCHA and press <strong>Create your Twitter Application</strong> button.</li>
+                    <li>Details of your new twitter application will be shown along with your consumer key and consumer secret.</li>
+                    <li>But, you also need to create access tokens and for that you need to click on <strong>Create my access token</strong> button.</li>
+                    <li>The page will then refresh on the "Details" tab with your new access tokens. (if you are not able to view these first time, click on details tab and access tokens should appear after page refresh) You can recreate these at any time if you need to.</li>
+                    <li>Now use these consumer key, consumer secret, access token and access token secret in <strong>Theme Options >> Footer </strong>. As, displayed in screenshot provided below.</li>
+                </ol>
+              <p class="lead">The <strong>footer logo</strong>, about text and read more link can only be displayed in footer if Footer Information Widget is used in Footer First Column for Widgets.</p>
+              <p class="lead">You can specify Copyright Text and  any other text to display on right side of footer from these theme options.</p>
+              <figure class="thumbnail"><img src="assets/img/to-footer.png" alt="Image"></figure>
+            </div>
+            
+            <div id="background-settings">
+              <h2>Background Settings</h2>
+              <p class="lead">To change the background of your theme. you need to navigate to <strong>Appearance &gt; Background</strong> and upload your image with related settings. As, displayed in image below.</p>
+              <figure class="thumbnail"><img src="assets/img/background.png" alt="Image"></figure>
+            </div>
+                     
+          </section>
+          
+          <!-- Theme Health Press ============================================== -->
+          <section id="theme">
+                <div class="page-header">
+            	</div>
+                
+                <div id="add-services">
+                  <h2>How to add Services</h2>
+                  <p class="lead">You can add services and later on use various services templates to display services in 1 column, 3 columns and 4 columns.</p>
+                  <p class="lead"><strong>How to add a new service</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/services/add-new-service.png" alt="Image"></figure>
+                  <p class="lead"><strong>How to add services listing page</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/services/services.png" alt="Image"></figure>
+                </div>   
+                
+                <div id="add-doctors">
+                  <h2>How to add Doctor</h2>
+                  <p class="lead">You can add doctors as displayed in image below and later on use various doctors templates to display doctors in 2 columns and 4 columns.</p>
+                  <p class="lead"><strong>How to add a new doctor</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/doctors/add-doctor.png" alt="Image"></figure>
+                  <p class="lead"><strong>How to add doctors listing page</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/doctors/doctors.png" alt="Image"></figure>
+                </div> 
+                
+                <div id="add-testi">
+                  <h2>How to add Testimonials</h2>
+                  <p class="lead">You can add testimonials as displayed in image below.</p>
+                  <p class="lead"><strong>How to add a new Testimonial</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/testimonials/add-testimonial.png" alt="Image"></figure>
+                </div>
+                
+                <div id="add-post">
+                  <h2>How to add New Blog Post</h2>
+                  <p class="lead">You can add new blog post with featured image as displayed in image below.</p>
+                  <p class="lead"><strong>How to add a new Blog Post</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/add-new-post.png" alt="Image"></figure>
+                </div>
+                
+                <div id="setting-contact">
+                  <h2>Setting up Contact Page</h2>
+                  <p class="lead">HealthPress Theme has a <strong>Contact Us Template</strong> and  options in Theme Options panel to help you setup a contact page.</p>
+                  <p class="lead">So, you need to just create a new page and assign it <strong>Contact Us</strong> Template. As displayed in image below.</p>
+                  <figure class="thumbnail"><img src="assets/img/pages/contact-page.png" alt="Image"></figure>
+                  <p class="lead">After creating the page you can setup your contact page theme options as demonstrated in theme options image at the start of this documentation.</p>
+                  <p class="lead">You can find your locations Latitude and Longitude from <a href="http://itouchmap.com/latlong.html">here</a>.</p>
+                </div>
+                
+                <div id="add-gallery">
+                  <h2>How to add New Gallery Item</h2>
+                  <p class="lead">You can add new Gallery Item with featured image as displayed in image below.</p>
+                  <p class="lead"><strong>How to add a new Gallery Item</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/gallery/gallery-adding.png" alt="Image"></figure>
+                  <p class="lead"><strong>Add Slider Images to Gallery</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/gallery/gallery-images.png" alt="Image"></figure>
+                </div>
+                
+                <div id="add-faq">
+                  <h2>How to add New FAQ</h2>
+                  <p class="lead">You can add new FAQ as displayed in image below.</p>
+                  <p class="lead"><strong>How to add a new FAQ</strong></p>
+                  <figure class="thumbnail"><img src="assets/img/faq.png" alt="Image"></figure>
+                </div>
+                
+          </section>
+          
+          <!-- Theme Files ============================================== -->
+        	<section id="theme-features">
+                <div class="page-header">
+                    <h1>D) Theme Features</h1>
+            	</div>
+                
+                <div id="custom-menus">
+                  <h2>Custom Menus</h2>
+                  <p class="lead">The theme has Only one custom menu locations that is in the header. To setup your custom menus, navigate to <strong>Appearance &gt; Menus</strong>. Give your menu a name and build it up using the available widgets. You can add a variety of items including pages, categories, custom links. To extend the available widgets, click the screen options tab at the very top of the screen and configure your options. Once you have built your menu, save it and assign it to <strong>Main Menu</strong> Location. As, displayed in the image below.</p>                  
+                  <figure class="thumbnail"><img src="assets/img/pages/menues.png" alt="Image"></figure>
+                </div>
+                
+                <div id="theme-option">
+                  <h2>Theme Options</h2>
+                  <p class="lead">The theme comes with easy to use theme options panel. You can access it by navigating to <strong>Appearance &gt; Theme Options</strong>. The theme options are conveniently spread over a number of vertical tabs and each tab contains the options that relates to a particular area of the theme.</p>                                    
+                </div>
+                
+                <div id="custom-widgets">
+                  <h2>Custom Widgets</h2>
+                  <p class="lead">The theme comes with various custom widgets. the widgets can be found under <strong>Appearance &gt; Widgets.</strong> Detail about every widget is given below.</p>                                    
+                </div>
+                
+                <div id="appointment-widget">
+                  <h3>Appointment Widget </h3>
+                  <figure class="thumbnail"><img src="assets/img/widgets/appointment.png" alt="Image"></figure>
+                  <p class="lead">Appointment widget displays on front end as given below and admin side as given above. It generates and email to target address with form details submitted by user.</p>                                    
+                  <figure class="thumbnail"><img src="assets/img/widgets/appointment-fe.png" alt="Image"></figure>
+                </div>
+
+                <div id="testimonials-widget">
+                    <h3>Testimonials Widget</h3>
+                    <figure class="thumbnail"><img src="assets/img/widgets/testimonials-widget.png" alt="Image"></figure>
+                    <p class="lead">Testimonials Widget displays testimonials as displayed in image below.</p>
+                    <figure class="thumbnail"><img src="assets/img/widgets/testimonials-widget-fe.png" alt="Image"></figure>
+                </div>
+                
+                <div id="news-widget">
+                  <h3>Newsletter Subscription Widget</h3>
+                  <figure class="thumbnail"><img src="assets/img/widgets/NewsletterSubscription.png" alt="Image"></figure>
+                  <p class="lead">This is a raw widget. you can configure it with any service you want as normally newsletter subscription services asks for email address and give you a form submission URL and required name for email input field.</p>                                    
+                  <p class="lead">Theme is also compatible with <a href="http://wordpress.org/extend/plugins/mailchimp/">MailChimp plugin </a>. just make sure to disable its own styles from its settings page.</p>
+                  <figure class="thumbnail"><img src="assets/img/widgets/NewsletterSubscription-fe.png" alt="Image"></figure>
+                </div>
+                
+                <div id="info-widget">
+                  <h3>Footer Information Widget</h3>
+                  <figure class="thumbnail"><img src="assets/img/widgets/footer-information.png" alt="Image"></figure>
+                  <p class="lead">Footer Information Widget displays the footer logo, about text and read more button based on the footer options mentioned in<strong> Theme Options &gt;&gt; Footer</strong> settings.</p>
+                  <figure class="thumbnail"><img src="assets/img/widgets/footer-information-fe.png" alt="Image"></figure>
+                </div>
+                
+                <div id="location-widget">
+                  <h3>Footer Location Widget</h3>
+                  <figure class="thumbnail"><img src="assets/img/widgets/location-widget.png" alt="Image"></figure>
+                  <p class="lead">Footer Location Widget displays the Location information as displayed in image below.</p>
+                  <figure class="thumbnail"><img src="assets/img/widgets/location-widget-fe.png" alt="Image"></figure>
+                </div>
+                
+                <div id="recentPost-widget">
+                  <h3>Recent Posts With Thumbnail Widget</h3>
+                  <figure class="thumbnail"><img src="assets/img/widgets/recent-blog-pots.png" alt="Image"></figure>
+                  <p class="lead">This widget displays blog posts with thumbnails in sidebar. as displayed in image below.</p>
+                  <figure class="thumbnail"><img src="assets/img/widgets/recent-blog-pots-fe.png" alt="Image"></figure>
+                </div>
+                
+                <div id="contact-widget">
+                  <h3>Quick Contact Widget</h3>
+                  <figure class="thumbnail"><img src="assets/img/widgets/quick-contact.png" alt="Image"></figure>
+                  <p class="lead">This widget displays quick contact information in sidebar as displayed below.</p>
+                  <figure class="thumbnail"><img src="assets/img/widgets/quick-contact-fe.png" alt="Image"></figure>
+                </div>                
+                
+            </section>
+            
+            <!-- Theme Files ============================================== -->
+        	<section id="short-codes">
+                <div class="page-header">
+                    <h1>D) Short codes</h1>
+            	</div>
+                <p class="lead">The theme comes pre-packed with a number of short codes allowing you to add styled content to your site with little effort.</p>
+                                
+                <div id="columns">
+                    <h3>Columns</h3>
+                    <p class="lead">Columns short code is easy way to make columns in your page or post. All short codes related to columns and usage of these codes is mentioned below:</p>
+    <pre class="prettyprint">
+    
+    [columns]
+        [one_half][/one_half] 
+        [one_third][/one_third] 
+        [two_third][/two_third] 
+        [one_fourth][/one_fourth] 
+        [three_fourth][/three_fourth]
+    [/columns] 
+    </pre>                   
+                </div>
+                
+                <div id="accordion">
+                    <h3>jQuery Accordion</h3>
+                    <p class="lead">jQuery Accordion shortcode makes an accordion. Its usage example is given below:</p>
+    <pre class="prettyprint">
+    
+    [accordion]
+        [accor_block active=true title="First Accordion Item"]Some Contents[/accor_block]
+        [accor_block title="Second Accordion Item"]Some Contents[/accor_block]
+        [accor_block title="Third Accordion Item"]Some Contents[/accor_block]
+    [/accordion]
+    </pre>                   
+                </div>
+                
+                <div id="tabs">
+                    <h3>jQuery Tabs</h3>
+                    <p class="lead">jQuery Tabs shortcode makes beautiful tabs in very simple way:</p>
+    <pre class="prettyprint">
+    
+    [tabs titles="First Tab, Second Tab, Third Tab"]
+        [tab_pane] First Tab Contents [/tab_pane]
+        [tab_pane] Second Tab Contents [/tab_pane]
+        [tab_pane] Third Tab Contents [/tab_pane]
+    [/tabs]
+    </pre>                   
+                </div>
+                
+                <div id="message">
+                    <h3>Message Boxes</h3>
+                    <p class="lead">We have four different types of message boxes in this theme. usage is mentioned below:</p>
+    <pre class="prettyprint">
+    
+    [error]Your Note Message Her[/error]
+    [success]Your Note Message Her[/success]
+    [info]Your Note Message Her[/info]
+    [notice]Your Note Message Her[/notice] 
+    </pre>                   
+                </div>
+                
+                <div id="buttons">
+                    <h3>Button</h3>
+                    <p class="lead">Button shortcode is provided to allow user to add his own buttons in contents. usage is mentioned below:</p>
+    <pre class="prettyprint">
+    
+    [button link="http://www.yourlink.com" target="_blank"]Button Title[/button]
+    </pre>                   
+                </div>
+                
+            </section>
+                  	 
+        	<section id="theme-customization"><h1>Theme Customization</h1>
+                <p>For customisation you can use services like 
+                    <a target="_blank" href="https://codeable.io/">https://codeable.io/</a> 
+                    OR 
+                    <a target="_blank" href="https://studio.envato.com/explore/wordpress-customization">https://studio.envato.com/explore/wordpress-customization</a>
+                    OR 
+                    <a target="_blank" href="http://werkpress.com/">http://werkpress.com/</a>
+                </p>
+        	
+        	<hr>
+        	 
+           <p class="lead">Once again, thank you so much for purchasing this Theme As I said at the beginning, I'd be glad to help you if you have any questions relating to this Theme. No guarantees, but I'll do my best to assist. If you face any problem, feel free to post a ticket on our <a href="http://support.inspirythemes.com/" target="_blank">support site.</a></p>		 
+        </div>
+        </div>
+        
+        </div>
+      </div>
+</div><!--End of container-->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <h1><center><b><a href="http://www.inspirythemes.com" target="_blank"><i>inspirythemes.com</i></a></b></center></h1>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>    
+    <script src="assets/js/bootstrap-scrollspy.js"></script>    
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/application.js"></script>
+    
+  </body>
+</html>
