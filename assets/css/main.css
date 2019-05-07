@@ -142,8 +142,8 @@ h1, .h1, h2, .h2, h3, .h3{
 .sub-menu-item:hover,
 .sub-menu-item:focus{
     text-decoration: none;
-    background: #4b5153;
-    color: #eaeaea;
+    background: #0073aa;
+    color: #fff;
 }
 
 .sub-menu {
